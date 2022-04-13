@@ -1,38 +1,10 @@
-.App {
-  text-align: center;
-}
+.container{
+    max-width: 500px; /*largura máx de um elemento, evitando que o width seja maior que o valor do max-width*/
+    margin: 30px auto; /*define a área de margem nos quatro lados do elemento, 30px lados e auto dos lados para ficar centralizado.*/
+    overflow: auto; /*especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado, exibido com barras de rolagem ou se transborda do elemento, Exibe barras de rolagem apenas se necessário */
+    min-height: 300px; /*É usado para definir a altura mínima de um determinado elemento*/
+    border: 2px solid chartreuse; /*Define as bordas do Container*/
+    padding: 30px; /*Define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    border-radius: 10px; /*Permite definir como bordas arredondadas são*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,13 +1,14 @@
 body {
-  margin: 0;
+  margin: 0; /*define a área de margem nos quatro lados do elemento*/
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    sans-serif; /*fontes de letras*/
+  -webkit-font-smoothing: antialiased; /*suavização de linhas, dos pixels, bordas e etc*/
+  -moz-osx-font-smoothing: grayscale; /*É uma função do CSS que modifica a imagem adicionada para as cores branco e preto . Esse resultado é um efeito "filtro".*/
+  background-color: #222; /*Define a cor de fundo do index*/
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace; /*configuração das letras, É uma fonte tipográfica cujas letras e caracteres ocupam o mesmo espaço horizontal.*/
 }
