@@ -1,10 +1,10 @@
 import React, { useState } from 'react' 
-import Tasks from './components/Tasks';
+import Tarefas from './components/Tarefas';
 import "./App.css"; 
 
 const App = () => { 
    
-     const [tasks, setTasks] = useState([ //state vai ser onde vamos armazenar nossas Tasks <tarefas>
+     const [tarefas, setTasks] = useState([ //state vai ser onde vamos armazenar nossas Tasks <tarefas>
         {
         
             id: '1',
@@ -27,7 +27,7 @@ const App = () => {
     return (
         <div> 
             <div className="container">
-                <Tasks tasks={tasks}/>
+                <Tarefas tarefas={tarefas}/> {/*Uso de props */}
             </div> 
         </div>
     );

@@ -7,7 +7,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root') //pega o root e renderiza dentro do render.
+  document.getElementById('root') //pega o root e renderiza dentro do App.
 );
 
 
