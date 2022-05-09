@@ -5,7 +5,7 @@ import TasksItem from "./TasksItem";
 const Tarefas = ({ tarefas}) => { //como as tarefas, então dentro do objeto props, coloca direto as tasks.
     return(
         <>
-        {tarefas.map(task => (
+        {tarefas.map(task => ( //para cada task ele renderiza uma task, ultilizando JS.
             <TasksItem task={task} />
         ))} 
         </>

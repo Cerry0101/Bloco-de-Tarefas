@@ -1,6 +1,7 @@
 import React, { useState } from 'react' 
 import Tarefas from './components/Tarefas';
 import "./App.css"; 
+import AddTaks from './components/AddTask.jsx';
 
 const App = () => { 
    
@@ -16,17 +17,13 @@ const App = () => {
             id: '2',
             title: 'Ler Livros',
             completed: true,
-        },
-        {
-            id: '3',
-            title: 'Ler Artigos',
-            completed: true,
         }
 
      ]) ; 
     return (
         <div> 
             <div className="container">
+                <AddTaks/>
                 <Tarefas tarefas={tarefas}/> {/*Uso de props */}
             </div> 
         </div>
