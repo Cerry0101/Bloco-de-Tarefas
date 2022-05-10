@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Tarefas from './components/Tarefas';
 import "./App.css"; 
 import AddTaks from './components/AddTask.jsx';
+import TasksItem from './components/TasksItem';
 
 const App = () => { 
    
@@ -19,11 +20,20 @@ const App = () => {
             completed: true,
         }
 
-     ]) ; 
+     ]); 
+
+     const handleTaskAddition = (taskTitle) => {
+        const newTasks = [...tarefas, {
+            title: taskTitle,
+            id: Math.random(10),
+            completed: false,
+        }]    
+        setTasks(newTasks);
+     }
     return (
         <div> 
             <div className="container">
-                <AddTaks/>
+                <AddTaks handleTaskAddition={handleTaskAddition} />
                 <Tarefas tarefas={tarefas}/> {/*Uso de props */}
             </div> 
         </div>
