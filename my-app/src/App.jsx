@@ -1,10 +1,14 @@
 import React, { useState } from 'react' 
-import Tarefas from './components/Tarefas';
-import "./App.css"; 
-import AddTaks from './components/AddTask.jsx';
 import {v4 as uuidv4} from 'uuid';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+
 import Header from './components/Header';
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import Tarefas from './components/Tarefas';
+import AddTask from './components/AddTask.jsx';
+
+import "./App.css"; 
+import TaskDetails from './components/TaskDetails';
+
 
 const App = () => { 
    
@@ -48,17 +52,26 @@ const App = () => {
         setTasks(newTasks);
      }
     return (
-        <Router> 
+        <BrowserRouter>
             <div className="container">
-                <Header/>
-                
-                    <AddTaks handleTaskAddition={handleTaskAddition} />
-                    <Tarefas 
-                        handleTaskDeletion={handleTaskDeletion}
-                        handleTaskClick={handleTaskClick}
-                        tarefas={tarefas}/> {/*Uso de props */}
-            </div> 
-        </Router>
+                <Header />
+                <Routes>
+                        <Route
+                            path="/"
+                            exact
+                            element={
+                            <>
+                                <AddTask handleTaskAddition={handleTaskAddition} />
+                                <Tarefas tarefas={tarefas} handleTaskClick={handleTaskClick} handleTaskDeletion={handleTaskDeletion} />
+                            </>
+                            }
+                        />
+                        <Route path="/:taskTitle" exact element={<TaskDetails/>} />
+                        <Route path="*" element={<sErrorPage/>} />
+                </Routes>
+            </div>
+    </BrowserRouter>
+  
     );
 };
 
