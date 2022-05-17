@@ -6,7 +6,11 @@ const Tarefas = ({ tarefas, handleTaskClick, handleTaskDeletion}) => { //como as
     return(
         <>
         {tarefas.map(task => ( //para cada task ele renderiza uma task, ultilizando JS.
-            <TasksItem task={task} handleTaskClick={handleTaskClick}  handleTaskDeletion={handleTaskDeletion}/>
+            <TasksItem 
+            key={task.id}
+            task={task} 
+            handleTaskClick={handleTaskClick} 
+            handleTaskDeletion={handleTaskDeletion}/>
         ))} 
         </>
     )
