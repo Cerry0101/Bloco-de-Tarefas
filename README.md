@@ -1,5 +1,5 @@
 # Bloco de Tarefas
-:computer: Projeto: Bloco de tarefas para os calouros da UFRA 2022 de LC e BSI.
+:computer: Projeto: Bloco de tarefas para os calouros da UFRA 2022 de LC e BSI.<br>
 :computer: Project: Task block for the warm-hearted of UFRA 2022 from LC and BSI.
 
 
