@@ -3,7 +3,8 @@
 :computer: Project: Task block for the warm-hearted of UFRA 2022 from LC and BSI.
 
 
-:heavy_check_mark: Tela inicial.<br>
+:heavy_check_mark: Tela inicial.
+<br>
 :heavy_check_mark: Home screen.
 <br>
 ![Screenshot 2022-05-19 at 13-14-51 React App](https://user-images.githubusercontent.com/50150158/169348812-b3d024e1-c874-4f67-a9e4-2a40a52b4a6f.png)
