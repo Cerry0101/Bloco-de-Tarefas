@@ -22,3 +22,6 @@
 :paperclip: Language Used: ReactJs e NodeJs. <br>
 :dart: Objetivo do Projeto: O bloco foi feito como projeto inicial para apresentar aos novos calouros da UFRA, no mini-curso de desenvolvimento Web. <br>
 :dart: Project Objective: The block was made as an initial project to present to the new freshmen of UFRA, in the mini-course of Web development. <br>
+
+:pushpin: Créditos: Vídeo base: https://www.youtube.com/watch?v=ErjWNvP6mko
+:pushpin: Credits: Video base: https://www.youtube.com/watch?v=ErjWNvP6mko
